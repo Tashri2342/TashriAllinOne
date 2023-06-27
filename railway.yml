@@ -1,0 +1,11 @@
+version: 1
+
+services:
+  worker:
+    builder:
+      name: python
+      python-version: 3.9
+    build:
+      - pip install -r requirements.txt
+    start:
+      - python main.py
